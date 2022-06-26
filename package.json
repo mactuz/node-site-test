@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A site to test the free Oracle server",
   "main": "app.js",
+  "repository": {
+    "url": "https://github.com/mactuz/node-site-test.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
