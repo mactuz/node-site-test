@@ -2,9 +2,16 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World!<br><br>This is the server speaking...<br><br>No extra information needed.')
+
+  var time_now= new Date().toTimeString();
+ 
+  msg = `Hello World!<br><br>Time now is ${time_now}`
+
+  res.send(msg);
 })
 
-app.listen(3000, function() {
-  console.log('Hello World app listening on port 3000!');
+port = 3000
+
+app.listen(port, function() {
+  console.log('Hello World app listening on port ' + port +'!');
 })
