@@ -1,0 +1,9 @@
+extends includes/layout.pug
+
+block content
+  h1= title
+  h3= message
+  h5= current_time
+  - var pets = ["cat", "dog", "horse", "mouse"];
+  each petName in pets
+    p #{ petName }
